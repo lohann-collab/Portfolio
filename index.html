@@ -160,7 +160,11 @@
 .music-player button:hover{background:#fff;color:#000}
 </style>
 
-</head>
+<style>
+.october-rose{position:fixed;right:18px;top:88px;z-index:40;display:flex;align-items:center;gap:7px;padding:6px 9px;border:1px solid rgba(255,105,160,.35);background:rgba(20,5,12,.86);color:#ff82b2;font:8px "JetBrains Mono",monospace;letter-spacing:.08em;backdrop-filter:blur(8px)}
+.rose-dot{font-size:13px;line-height:1;animation:rosePulse 2s ease-in-out infinite}@keyframes rosePulse{50%{transform:scale(1.18);opacity:.7}}
+@media(max-width:800px){.october-rose{top:72px;right:10px;font-size:7px}}
+</style></head>
 <body>
   <header class="topbar">
     <div class="wrap nav">
@@ -191,7 +195,7 @@
           <i class="dot"></i><i class="dot"></i><i class="dot"></i>
           <span class="window-title">~/lohann/profile.jpg</span>
         </div>
-        <img class="profile-img" src="assets/profile.jpg" alt="Photo de profil de Lohann">
+        <img class="profile-img" src="profile.jpg" alt="Photo de profil de Lohann">
       </div>
     </section>
 
@@ -310,5 +314,6 @@
     window.addEventListener("DOMContentLoaded", startMusic);
     window.addEventListener("load", startMusic);
   </script>
+<div class="october-rose"><span class="rose-dot">✿</span><span>OCTOBRE ROSE</span></div>
 </body>
 </html>
